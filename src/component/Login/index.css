@@ -1,0 +1,47 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(
+        rgb(75, 239, 15),rgb(146, 241, 112),rgb(201, 246, 193) 
+
+    );
+    height: 100vh;
+  }
+  .label-of-signin{
+    font-weight: bold;
+  }
+  .heading-signin{
+    text-align: center;
+    font-weight: bold;
+  }
+  .button{
+    background-color: rgb(88, 88, 239);
+    color: white;
+    padding: 8px;
+    border: none;
+  }
+  .button-align-sumbit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed white;
+    padding: 15px;
+  }
+  @media screen and (min-width:576px) {
+    .form{
+        width: 300px;
+        height: 350px;
+    }
+  }
+  @media screen and (max-width:576px) {
+    .form{
+        width: 250px;
+        height: 320px;
+    }
+  }
