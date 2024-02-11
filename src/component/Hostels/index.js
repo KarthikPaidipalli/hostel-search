@@ -256,7 +256,7 @@ class Hostels extends Component {
             <div className='bottom-second'>
               <div className='searchalign'>
               <input type='search' className='input' onChange={this.inputentered} />
-              <MdSearch size={25}/>
+              <MdSearch size={26}/>
               </div>
               {updatehostellist.map((hostel) => (
                 <div key={hostel.id} className='hotelcard'>
