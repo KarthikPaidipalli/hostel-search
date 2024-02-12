@@ -147,7 +147,15 @@ const listofholstels=[
         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR855_8G0UWHGYeuH94zK40S8l6sa-nBdsN1g&usqp=CAU",
         sharing:4,
         rent:6500
-    }
+    },
+    {
+      id:19,
+      type:"Co-Living",
+      hostelname:"Tarun Coliving",
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR855_8G0UWHGYeuH94zK40S8l6sa-nBdsN1g&usqp=CAU",
+      sharing:3,
+      rent:7500
+  }
 ]
 const ratings=[
     {
