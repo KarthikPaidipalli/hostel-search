@@ -172,7 +172,12 @@ const ratings=[
         rateings:4,
         value:4
 
-    }
+    },
+    {
+      rateings:5,
+      value:5
+
+  }
 ]
 const pricing=[
     {
