@@ -186,9 +186,9 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/login" component={Login} />
-            <Route path="/hostels" component={Hostels} />
-            <Route path="/addhostel" component={Addhostel} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/hostels" component={Hostels} />
+            <Route exact path="/addhostel" component={Addhostel} />
           </Switch>
         </BrowserRouter>
       </HostelsContext.Provider>

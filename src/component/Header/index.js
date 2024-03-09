@@ -14,7 +14,7 @@ const Header = (props)=>{
                 <ul className="ul-in-header">
                     <Link to="/" className="link"><li className="li-in-hostels">Home</li></Link>
                     <Link to="/hostels" className="link"><li className="li-in-hostels">Find hostels</li></Link>
-                    <Link to="/addhostels" className="link"><li className="li-in-hostels">Add hostel</li></Link>
+                    <Link to="/addhostel" className="link"><li className="li-in-hostels">Add hostel</li></Link>
                 </ul>
                 <Popup
                     modal
