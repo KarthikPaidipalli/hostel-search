@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import HostelsContext from "../../context/HostelsContext";
-
+import "./index.css"
 class Addhostel extends Component {
   state = { count: 21, type: "", hostelname: "", image: "", sharing: 0, rent: 0 };
 
@@ -47,7 +47,9 @@ class Addhostel extends Component {
           return (
             <div>
               <Header />
-              <form onSubmit={(event) => this.formsubmitedforhostel(event, addnewhostel)}>
+              <div className="addcontainer">
+                <div>
+                <form onSubmit={(event) => this.formsubmitedforhostel(event, addnewhostel)} className="forma">
                 <label htmlFor="hostelname">HostelName:</label>
                 <input type="text" id="hostelname" value={hostelname} onChange={this.hostelnameentered} />
                 <label htmlFor="hostetype">Hosteltype:</label>
@@ -60,6 +62,8 @@ class Addhostel extends Component {
                 <input type="text" id="hostelrent" value={rent} onChange={this.hostelnrent} />
                 <button type="submit">Submit</button>
               </form>
+                </div>
+              </div>
             </div>
           );
         }}
