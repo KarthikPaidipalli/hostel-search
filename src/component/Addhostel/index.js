@@ -3,7 +3,7 @@ import Header from "../Header";
 import HostelsContext from "../../context/HostelsContext";
 import "./index.css"
 class Addhostel extends Component {
-  state = { count: 21, type: "", hostelname: "", image: "", sharing: 0, rent: 0 };
+  state = { count: 21, type: "", hostelname: "", image: "", sharing: "", rent: "" };
 
   hostelnameentered = (event) => {
     this.setState({ hostelname: event.target.value });
@@ -50,17 +50,17 @@ class Addhostel extends Component {
               <div className="addcontainer">
                 <div>
                 <form onSubmit={(event) => this.formsubmitedforhostel(event, addnewhostel)} className="forma">
-                <label htmlFor="hostelname">HostelName:</label>
-                <input type="text" id="hostelname" value={hostelname} onChange={this.hostelnameentered} />
-                <label htmlFor="hostetype">Hosteltype:</label>
-                <input type="text" id="hostetype" value={type} onChange={this.hosteltype} />
-                <label htmlFor="hostelimage">HostelImageURL:</label>
-                <input type="text" id="hostelimage" value={image} onChange={this.hostelimage} />
-                <label htmlFor="sharing">Sharing:</label>
-                <input type="text" id="sharing" value={sharing} onChange={this.hostelsharing} />
-                <label htmlFor="hostelrent">HostelRent:</label>
-                <input type="text" id="hostelrent" value={rent} onChange={this.hostelnrent} />
-                <button type="submit">Submit</button>
+                <label htmlFor="hostelname" className="formelements">HostelName:</label>
+                <input type="text" id="hostelname" value={hostelname} onChange={this.hostelnameentered} className="formelementsinput" placeholder="Enter hostel name"/>
+                <label htmlFor="hostetype" className="formelements">Hosteltype:</label>
+                <input type="text" id="hostetype" value={type} onChange={this.hosteltype} className="formelementsinput" placeholder="Enter hostel type"/>
+                <label htmlFor="hostelimage" className="formelements">HostelImageURL:</label>
+                <input type="file" id="hostelimage" value={image} onChange={this.hostelimage} className="formelementsinput" placeholder=""/>
+                <label htmlFor="sharing" className="formelements">Sharing:</label>
+                <input type="text" id="sharing" value={sharing} onChange={this.hostelsharing} className="formelementsinput"  placeholder="Enter sharing"/>
+                <label htmlFor="hostelrent" className="formelements">HostelRent:</label>
+                <input type="text" id="hostelrent" value={rent} onChange={this.hostelnrent} className="formelementsinput" placeholder="Enter hostelrent"/>
+                <button type="submit" className="submitbutton">Submit</button>
               </form>
                 </div>
               </div>

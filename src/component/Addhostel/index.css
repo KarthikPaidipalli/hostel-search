@@ -4,8 +4,31 @@
     align-items: center;
     height: 80vh;
     justify-content: center;
+    background-color: bisque;
+    height: 100vh;
 }
 .forma{
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    padding: 45px;
+    border-radius: 5px;
+    width: 300px;
+    background-color: white;
+}
+.submitbutton{
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 45px;
+}
+.formelements{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.formelementsinput{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 30px;
 }
