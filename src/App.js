@@ -178,9 +178,12 @@ class App extends Component {
       hostelslist: [...prevState.hostelslist, val]
     }));
   };
+  componentDidMount(){
+    localStorage.setItem("store",JSON.stringify(this.state.hostelslist))
+  }
 
   render() {
-    const { hostelslist } = this.state;
+    const hostelslist= JSON.parse(localStorage.getItem("store"));
     return (
       <HostelsContext.Provider value={{ hostelslist, addnewhostel: this.addhostel }}>
         <BrowserRouter>
